@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root{
+    --cor-primaria: white;
+    --cor-secundaria:grey;
+    --cor-terciaria:#167BF7;
+    --cor-quartenaria:#00030C;
+    --fonte-principal:'Inter', sans-serif;
+}
+
+
+body{
+    background-color: black;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa{
+    margin: 0 6rem;
+}
+
+.Apresentacao__conteudo{
+    background-image: url("../Assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.Apresentacao__conteudo__titulo{
+    color: var(--cor-primaria);  
+    font-size: 28px;
+    font-weight: 700;     
+}
+
+.container__imagem{
+margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 1em;
+    border-radius: 10 px;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+.container__botao2{
+    background-color: transparent;
+    border: 2px solid;
+    border-color: var(--cor-primaria);
+    color: var(--cor-primaria);
+    padding: 1em;
+    border-radius: 10 px;
+    text-decoration: none;
+    display: block;
+}
+.container__aviso{
+    color: var(--cor-secundaria);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0% 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.3em;
+}
+.descricao__texto{
+    color: var(--cor-secundaria)
+}
+
+.secundario__botao{
+    display:inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 2em;
+}
+
+.dispositivos{
+    text-align:center;
+}
+
+.dispositivos__titulo{
+    font-size: 48px;
+    
+}
+.dispositivos__lista{
+    display:flex;
+    justify-content: center;
+    list-style-type:none;
+    margin: 5em 0em;
+   
+}
+
+.lista__item{
+    font-size: 32px;
+}
+
+
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__logo{
+    
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 2em;
+    
+}
+.lista__link a{
+    list-style-type: none;
+    padding: 8px;
+    margin-bottom: 1em;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 16px;
+}
+
+.rodape__paragrafo{
+    color: var(--cor-secundaria);
+    margin-top: 2em;
+    font-size:14px;
+}
+
+.lista__link a:hover{
+    color:var(--cor-terciaria)
+}
+
+.lista__link a:active{
+    color:gold;
+}
+
+.container__botao:hover{
+    background-color: blue;
+    color: black;
+    transition: 1s;
+}
